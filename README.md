@@ -5,3 +5,4 @@ Repository for final lesson before mid term of computer graphic course
 - NIM       : 1313623038
 - Class     : Ilmu Komputer 23B
 
+link gemini : https://gemini.google.com/share/eb5411df7082
