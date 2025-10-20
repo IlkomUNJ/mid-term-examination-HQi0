@@ -19,11 +19,12 @@ dan print semua matrix yang !isEmpty untuk melihat pola
 
 (356, 256):
 
--1 1 1 
--1 1 1 
--0 0 0 
+- 1 1 1 
+- 1 1 1 
+- 0 0 0 
 
 contoh pola
+
 
 
 
