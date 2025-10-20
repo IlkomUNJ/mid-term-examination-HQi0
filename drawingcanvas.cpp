@@ -45,6 +45,10 @@ void DrawingCanvas::segmentDetection(){
             }
 
             CustomMatrix mat(local_window);
+            if(!mat.isEmpty()){
+                cout << "(" << i << ", " << j << "):" << endl;
+                mat.print();
+            }
 
             windows.push_back(mat);
         }
@@ -54,7 +58,7 @@ void DrawingCanvas::segmentDetection(){
 
 void DrawingCanvas::paintEvent(QPaintEvent *event){
     QPainter painter(this);
-    painter.setRenderHint(QPainter::Antialiasing);
+    // painter.setRenderHint(QPainter::Antialiasing);
 
     // Set up the pen and brush for drawing the points
     QPen pen(Qt::blue, 5);
@@ -69,7 +73,7 @@ void DrawingCanvas::paintEvent(QPaintEvent *event){
     if(isPaintLinesClicked){
         cout << "paint lines block is called" << endl;
         pen.setColor(Qt::red);
-        pen.setWidth(4); // 4-pixel wide line
+        pen.setWidth(1); // 4-pixel wide line
         pen.setStyle(Qt::SolidLine);
         painter.setPen(pen);
 
